@@ -1,3 +1,16 @@
 /* Блок html */
 .html {
 }
+
+.html__body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.footer__link {
+    background-image: url("https://rs.school/images/rs_school_js.svg");
+    background-repeat: no-repeat;
+    width: 121px;
+    height: 45px;
+}
