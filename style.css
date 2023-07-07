@@ -26,6 +26,63 @@
   margin: 0;
 }
 
+/* Блок header */
+
+.header {
+  background-color: #faebd7;
+  text-align: center;
+}
+
+.header__container {
+  margin: 0 auto;
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.header__nav-item {
+  list-style-type: none;
+  padding: 20px 20px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header__nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.header__nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.header__nav-link:active {
+  opacity: 0.5;
+}
+
 .footer__link {
     background-image: url("https://rs.school/images/rs_school_js.svg");
     background-repeat: no-repeat;
