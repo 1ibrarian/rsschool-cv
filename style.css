@@ -32,9 +32,13 @@
 
 /* Блок html */
 .html {
+  height: 100%;
 }
 
 .html__body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -100,6 +104,10 @@
 }
 
 /* Блок main */
+
+.main {
+  flex-grow: 1;
+}
 
 .main__container {
   display: flex;
