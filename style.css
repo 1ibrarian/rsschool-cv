@@ -83,6 +83,80 @@
   opacity: 0.5;
 }
 
+/* Блок main */
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+}
+
+.main__text {
+  font-size: 30px;
+  line-height: 35px;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Блок section */
+
+.section {
+  border-bottom: 1px solid #672f2f;
+}
+
+.section::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: 50px;
+  left: -57px;
+  top: -5px;
+  border: 1px solid #67945e;;
+}
+
+.section__heading {
+  line-height: 35px;
+}
+
+.section__link {
+  text-decoration: none;
+  color: #67945e;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.section__item {
+  list-style-type: none;
+  padding: 10px 0;
+  position: relative;
+}
+
+.section__item::before {
+  content: "";
+  background-image: url("./assets/svg/tick.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: 50px;
+  left: -57px;
+  top: -5px;
+}
+
+.section__code {
+  background-color: #d1dce5
+}
+
 .footer__link {
     background-image: url("https://rs.school/images/rs_school_js.svg");
     background-repeat: no-repeat;
