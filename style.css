@@ -115,6 +115,14 @@
   }
 }
 
+.main__img {
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  display: block;
+  margin: 0 auto;
+}
+
 .main__text {
   font-size: 30px;
   line-height: 35px;
